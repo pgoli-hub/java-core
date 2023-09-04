@@ -3,8 +3,12 @@ package com.goli.algorithms;
 public class Palindrome {
 
     public static void main(String[] args) {
-        int value = 121;
-        System.out.println(value + " isPalindrome: " + isPalindrome(value));
+        int[] testCases = {121,456,111,-101,0};
+        for (int testCase :
+                testCases) {
+
+            System.out.println(testCase + " isPalindrome: " + isPalindrome(testCase));
+        }
     }
 
     private static boolean isPalindrome(int value) {
